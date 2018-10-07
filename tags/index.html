@@ -296,7 +296,8 @@
   
     <div class="comments" id="comments">
       
-        <div id="gitment-container"></div>
+        <div onclick="showGitment()" id="gitment-display-button">显示 Gitment 评论</div>
+        <div id="gitment-container" style="display:none"></div>
       
     </div>
 
@@ -588,8 +589,8 @@
       function renderGitment(){
         var gitment = new Gitmint({
             id: '1538626104000', 
-            owner: '[object Object]',
-            repo: 'https://github.com/Guojx123/Guojx123.github.io',
+            owner: 'Guojx123',
+            repo: 'Guojx123.github.io',
             
             lang: "zh-Hans" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
             
@@ -604,7 +605,11 @@
       }
 
       
-      renderGitment();
+      function showGitment(){
+        document.getElementById("gitment-display-button").style.display = "none";
+        document.getElementById("gitment-container").style.display = "block";
+        renderGitment();
+      }
       
       </script>
     
