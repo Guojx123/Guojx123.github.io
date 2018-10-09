@@ -290,11 +290,40 @@
 
   
     <div class="comments" id="comments">
-      
-        <div id="gitment-container"></div>
-      
+        <!--汉化-->
+    <link rel="stylesheet" href="https://billts.site/extra_css/gitment.css">
+	<script src="https://billts.site/js/gitment.js"></script>
+	<!--原型-->
+	<!--
+	<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+	<script src="https://imsun.github.io/gitment/dist/gitment.browser.js" type="text/javascript"></script>
+	-->
+	
+      <div id="gitmentContainer" style="margin-bottom: -19px;"></div>
+     
+      <style>
+        .gitment-container a {
+          border: none;
+        }
+        .comments {
+          margin: 60px 0 0;padding: 0 60px;
+        }
+      </style>
+     
+      <script type="text/javascript">
+        var gitment = new Gitment({
+			  id: '<%= page.title %>',
+			  title: '<%= page.title %>',
+			  owner: 'Guoxj123',
+			  repo: 'https://github.com/Guojx123/ius.git',
+			  oauth: {
+				client_id: 'f038712869ef2aa09c46',
+				client_secret: 'c3e3066c5c4751380fdcef5ef4b7f1f62f0ba042',
+			  },
+        })
+        gitment.render('gitmentContainer')
+      </script>
     </div>
-
   
 
 
@@ -568,45 +597,30 @@
 
 
 
-<!-- LOCAL: You can save these files to your site and update links -->
-    
-        
-        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
-        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
-    
-<!-- END LOCAL -->
-
-    
-
-    
-      <script type="text/javascript">
-      function renderGitment(){
-        var gitment = new Gitmint({
-            id: '1538626246000', 
-            owner: 'Guojx123',
-            repo: 'https://github.com/Guojx123/ius.git',
-            
-            lang: "zh-Hans" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
-            
-            oauth: {
-            
-            
-                client_secret: 'c3e3066c5c4751380fdcef5ef4b7f1f62f0ba042',
-            
-                client_id: 'f038712869ef2aa09c46'
-            }});
-        gitment.render('gitment-container');
-      }
-
-      
-      renderGitment();
-      
-      </script>
-    
 
 
 
-
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'UwSjC3k3k5zerkGE9uNMbVXQ-gzGzoHsz',
+        appKey: 'bYpIcdI4x05oejXPHaBq3Hdi',
+        placeholder: 'ヾﾉ≧∀≦)o 留下你宝贵的评论吧',
+        avatar:'/images/blog-logo.jpg',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 
