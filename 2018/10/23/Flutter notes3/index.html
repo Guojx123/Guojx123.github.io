@@ -79,18 +79,23 @@
 
 
 
-<meta name="description" content="底部导航栏和基本列表，我们已经做得差不多了今天就在它们的基础上说说路由跳转。">
+<meta name="description" content="底部导航栏和基本列表，我们已经做得差不多了今天就在它们的基础上说说路由跳转和导航。">
 <meta name="keywords" content="Flutter">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Flutter 学习笔记3">
 <meta property="og:url" content="http://yoursite.com/2018/10/23/Flutter notes3/index.html">
 <meta property="og:site_name" content="GGjx&#39;s Blog">
-<meta property="og:description" content="底部导航栏和基本列表，我们已经做得差不多了今天就在它们的基础上说说路由跳转。">
+<meta property="og:description" content="底部导航栏和基本列表，我们已经做得差不多了今天就在它们的基础上说说路由跳转和导航。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-10-23T06:02:35.301Z">
+<meta property="og:image" content="http://yoursite.com/images/F3_1.png">
+<meta property="og:image" content="http://yoursite.com/images/F3_2.png">
+<meta property="og:image" content="http://yoursite.com/images/F3_3.png">
+<meta property="og:image" content="http://yoursite.com/images/F3_4.png">
+<meta property="og:updated_time" content="2018-10-26T12:31:38.374Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Flutter 学习笔记3">
-<meta name="twitter:description" content="底部导航栏和基本列表，我们已经做得差不多了今天就在它们的基础上说说路由跳转。">
+<meta name="twitter:description" content="底部导航栏和基本列表，我们已经做得差不多了今天就在它们的基础上说说路由跳转和导航。">
+<meta name="twitter:image" content="http://yoursite.com/images/F3_1.png">
 
 
 
@@ -351,7 +356,13 @@
       
 
       
-        <p>底部导航栏和基本列表，我们已经做得差不多了<br>今天就在它们的基础上说说路由跳转。<br><a id="more"></a></p>
+        <p>底部导航栏和基本列表，我们已经做得差不多了<br>今天就在它们的基础上说说路由跳转和导航。<br><a id="more"></a><br> 那么你们还记得上次做的那个列表和底部导航栏吗，我们需要在它的基础上添加一些新的东西<br><img src="/images/F3_1.png" alt=""><br> e当然，一个列表可以进行相关的操作，我们现在就来实现它</p>
+<p> 官方实例:<a href="https://docs.flutter.io/flutter/widgets/Navigator-class.html" target="_blank" rel="noopener">导航和路由</a><br> <figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">void</span> main() &#123;</span><br><span class="line">   runApp(MaterialApp(</span><br><span class="line">    home: MyAppHome(), <span class="comment">// becomes the route named '/'</span></span><br><span class="line">    routes: &lt;<span class="built_in">String</span>, WidgetBuilder&gt; &#123;</span><br><span class="line">      <span class="string">'/a'</span>: (BuildContext context) =&gt; MyPage(title: <span class="string">'page A'</span>),</span><br><span class="line">      <span class="string">'/b'</span>: (BuildContext context) =&gt; MyPage(title: <span class="string">'page B'</span>),  </span><br><span class="line">      <span class="string">'/c'</span>: (BuildContext context) =&gt; MyPage(title: <span class="string">'page C'</span>),</span><br><span class="line">      &#125;,</span><br><span class="line">   ));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p> To show a route by name:<br> <figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Navigator.pushNamed(context, <span class="string">'/b'</span>);</span><br></pre></td></tr></table></figure></p>
+<p> 对于我们的demo也是差不多的，我们先在page新建一个Detail,将我们router的地址首先定义到我们的main.dart中<br> <img src="/images/F3_2.png" alt=""><br> 这样，我们就能在其他界面中，通过”/Detail”的路径，路由到这个界面。</p>
+<p> 然后WIdget，我们先写成这样：<br> <img src="/images/F3_3.png" alt=""></p>
+<p> 但是一般需要把参数传递下去，我们需要在List.dart文件中的ListView.builder中的ontap,方法这样写：<br> <img src="/images/F3_4.png" alt=""></p>
+<p> 那么，路由跳转和导航就做完了。。。（鼓掌～）</p>
 
       
     </div>
@@ -391,6 +402,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/10/24/Flutter note4/" rel="prev" title="Flutter 学习笔记4">
+                Flutter 学习笔记4 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -498,7 +513,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
