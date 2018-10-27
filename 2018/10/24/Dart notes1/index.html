@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Dart," />
 
 
 
@@ -79,27 +79,18 @@
 
 
 
-<meta name="description" content="旅途，Karl Shakur摄于加州。 尼亚加拉瀑布，来自摄影师Michael Sidofsky。 秋日山林，Emmett Sparling摄于日本京都。 水上菜市场，来自摄影师HARY MUHAMMAD。 楼宇之间，来自摄影师Tynan Daniels。 千禧公园淋雨的孩子，来自摄影师Kam。 秋日山林，来自摄影师Glenn Lee Robinson。 奥地利哈尔施塔特，来自摄影师James R">
-<meta property="og:type" content="website">
-<meta property="og:title" content="GGjx&#39;s Blog">
-<meta property="og:url" content="http://yoursite.com/photo/index.html">
+<meta name="description" content="我们知道，Dart就是Flutter框架的编程语言，Dart亮相于2011年10月10至12日在丹麦奥尔胡斯举行的GOTO大会上，而Flutter的前身:在2015年5月Dart开发者峰会上，亮相的基于Dart语言的移动应用程序开发框架Sky ，后更名为Flutter。工欲善其事，必先利其器。下面，就跟我一起了解一下Dart，这个有趣而又神秘的语言。">
+<meta name="keywords" content="Dart">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Dart 基础">
+<meta property="og:url" content="http://yoursite.com/2018/10/24/Dart notes1/index.html">
 <meta property="og:site_name" content="GGjx&#39;s Blog">
-<meta property="og:description" content="旅途，Karl Shakur摄于加州。 尼亚加拉瀑布，来自摄影师Michael Sidofsky。 秋日山林，Emmett Sparling摄于日本京都。 水上菜市场，来自摄影师HARY MUHAMMAD。 楼宇之间，来自摄影师Tynan Daniels。 千禧公园淋雨的孩子，来自摄影师Kam。 秋日山林，来自摄影师Glenn Lee Robinson。 奥地利哈尔施塔特，来自摄影师James R">
+<meta property="og:description" content="我们知道，Dart就是Flutter框架的编程语言，Dart亮相于2011年10月10至12日在丹麦奥尔胡斯举行的GOTO大会上，而Flutter的前身:在2015年5月Dart开发者峰会上，亮相的基于Dart语言的移动应用程序开发框架Sky ，后更名为Flutter。工欲善其事，必先利其器。下面，就跟我一起了解一下Dart，这个有趣而又神秘的语言。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://yoursite.com/images/Picture/1.jpeg">
-<meta property="og:image" content="http://yoursite.com/images/Picture/2.jpeg">
-<meta property="og:image" content="http://yoursite.com/images/Picture/3.jpeg">
-<meta property="og:image" content="http://yoursite.com/images/Picture/4.jpeg">
-<meta property="og:image" content="http://yoursite.com/images/Picture/5.jpeg">
-<meta property="og:image" content="http://yoursite.com/images/Picture/6.jpeg">
-<meta property="og:image" content="http://yoursite.com/images/Picture/7.jpeg">
-<meta property="og:image" content="http://yoursite.com/images/Picture/8.jpeg">
-<meta property="og:image" content="http://yoursite.com/images/Picture/9.jpeg">
-<meta property="og:updated_time" content="2018-10-22T08:34:04.913Z">
+<meta property="og:updated_time" content="2018-10-27T09:17:30.245Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="GGjx&#39;s Blog">
-<meta name="twitter:description" content="旅途，Karl Shakur摄于加州。 尼亚加拉瀑布，来自摄影师Michael Sidofsky。 秋日山林，Emmett Sparling摄于日本京都。 水上菜市场，来自摄影师HARY MUHAMMAD。 楼宇之间，来自摄影师Tynan Daniels。 千禧公园淋雨的孩子，来自摄影师Kam。 秋日山林，来自摄影师Glenn Lee Robinson。 奥地利哈尔施塔特，来自摄影师James R">
-<meta name="twitter:image" content="http://yoursite.com/images/Picture/1.jpeg">
+<meta name="twitter:title" content="Dart 基础">
+<meta name="twitter:description" content="我们知道，Dart就是Flutter框架的编程语言，Dart亮相于2011年10月10至12日在丹麦奥尔胡斯举行的GOTO大会上，而Flutter的前身:在2015年5月Dart开发者峰会上，亮相的基于Dart语言的移动应用程序开发框架Sky ，后更名为Flutter。工欲善其事，必先利其器。下面，就跟我一起了解一下Dart，这个有趣而又神秘的语言。">
 
 
 
@@ -129,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/photo/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/10/24/Dart notes1/"/>
 
 
 
 
 
-  <title> | GGjx's Blog</title>
+  <title>Dart 基础 | GGjx's Blog</title>
   
 
 
@@ -260,42 +251,175 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/24/Dart notes1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="江 寒君">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/blog-logo.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="GGjx's Blog">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline"></h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <h1 id="旅途，Karl-Shakur摄于加州。"><a href="#旅途，Karl-Shakur摄于加州。" class="headerlink" title="旅途，Karl Shakur摄于加州。"></a>旅途，Karl Shakur摄于加州。</h1><p><img src="/images/Picture/1.jpeg" alt=""></p>
-<h1 id="尼亚加拉瀑布，来自摄影师Michael-Sidofsky。"><a href="#尼亚加拉瀑布，来自摄影师Michael-Sidofsky。" class="headerlink" title="尼亚加拉瀑布，来自摄影师Michael Sidofsky。"></a>尼亚加拉瀑布，来自摄影师Michael Sidofsky。</h1><p><img src="/images/Picture/2.jpeg" alt=""></p>
-<h1 id="秋日山林，Emmett-Sparling摄于日本京都。"><a href="#秋日山林，Emmett-Sparling摄于日本京都。" class="headerlink" title="秋日山林，Emmett Sparling摄于日本京都。"></a>秋日山林，Emmett Sparling摄于日本京都。</h1><p><img src="/images/Picture/3.jpeg" alt=""></p>
-<h1 id="水上菜市场，来自摄影师HARY-MUHAMMAD。"><a href="#水上菜市场，来自摄影师HARY-MUHAMMAD。" class="headerlink" title="水上菜市场，来自摄影师HARY MUHAMMAD。"></a>水上菜市场，来自摄影师HARY MUHAMMAD。</h1><p><img src="/images/Picture/4.jpeg" alt=""></p>
-<h1 id="楼宇之间，来自摄影师Tynan-Daniels。"><a href="#楼宇之间，来自摄影师Tynan-Daniels。" class="headerlink" title="楼宇之间，来自摄影师Tynan Daniels。"></a>楼宇之间，来自摄影师Tynan Daniels。</h1><p><img src="/images/Picture/5.jpeg" alt=""></p>
-<h1 id="千禧公园淋雨的孩子，来自摄影师Kam。"><a href="#千禧公园淋雨的孩子，来自摄影师Kam。" class="headerlink" title="千禧公园淋雨的孩子，来自摄影师Kam。"></a>千禧公园淋雨的孩子，来自摄影师Kam。</h1><p><img src="/images/Picture/6.jpeg" alt=""></p>
-<h1 id="秋日山林，来自摄影师Glenn-Lee-Robinson。"><a href="#秋日山林，来自摄影师Glenn-Lee-Robinson。" class="headerlink" title="秋日山林，来自摄影师Glenn Lee Robinson。"></a>秋日山林，来自摄影师Glenn Lee Robinson。</h1><p><img src="/images/Picture/7.jpeg" alt=""></p>
-<h1 id="奥地利哈尔施塔特，来自摄影师James-Relfdyer。"><a href="#奥地利哈尔施塔特，来自摄影师James-Relfdyer。" class="headerlink" title="奥地利哈尔施塔特，来自摄影师James Relfdyer。"></a>奥地利哈尔施塔特，来自摄影师James Relfdyer。</h1><p><img src="/images/Picture/8.jpeg" alt=""></p>
-<h1 id="晨曦中的布罗莫火山，来自摄影师Jooso-Hamalainen。"><a href="#晨曦中的布罗莫火山，来自摄影师Jooso-Hamalainen。" class="headerlink" title="晨曦中的布罗莫火山，来自摄影师Jooso Hamalainen。"></a>晨曦中的布罗莫火山，来自摄影师Jooso Hamalainen。</h1><p><img src="/images/Picture/9.jpeg" alt=""></p>
-
+          <h1 class="post-title" itemprop="name headline">Dart 基础</h1>
         
-      </div>
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-10-24T12:45:48+08:00">
+                2018-10-24
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/10/24/Dart notes1/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/10/24/Dart notes1/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2018/10/24/Dart notes1/" class="leancloud_visitors" data-flag-title="Dart 基础">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <p>我们知道，<strong>Dart</strong>就是Flutter框架的编程语言，Dart亮相于2011年10月10至12日在丹麦奥尔胡斯举行的GOTO大会上，而Flutter的前身:在2015年5月Dart开发者峰会上，亮相的基于<strong>Dart</strong>语言的移动应用程序开发框架Sky ，后更名为Flutter。工欲善其事，必先利其器。下面，就跟我一起了解一下<strong>Dart</strong>，这个有趣而又神秘的语言。<br><a id="more"></a><br>官方文档点击<a href="https://www.dartlang.org/" target="_blank" rel="noopener">传送门</a>。<br>作为 全平台开放的语言之一，<strong>Dart</strong>拥有它独特的魅力和优异的性能。</p>
+<h2 id="1-Productive"><a href="#1-Productive" class="headerlink" title="1.Productive"></a>1.Productive</h2><p>Dart的语法清晰简洁，工具简单而强大。声音输入可帮助您尽早识别细微错误。Dart拥有经过战斗的core libraries（核心库）和数千个包的ecosystem。</p>
+<h2 id="2-Fast"><a href="#2-Fast" class="headerlink" title="2.Fast"></a>2.Fast</h2><p>Dart提供优化的提前编译，以在移动设备和Web上实现可预测的高性能和快速启动。</p>
+<h2 id="3-Portable"><a href="#3-Portable" class="headerlink" title="3.Portable"></a>3.Portable</h2><p>Dart编译为ARM和x86代码，因此Dart移动应用程序可以在iOS，Android及更高版本上本机运行。对于Web应用程序，Dart会转换为JavaScript。</p>
+<h2 id="4-Approachable"><a href="#4-Approachable" class="headerlink" title="4.Approachable"></a>4.Approachable</h2><p>Dart对于许多现有的开发人员来说都很熟悉，这要归功于它不出异的面向对象和语法。如果您已经了解C ++，C＃或Java，那么只需几天就可以使用Dart。</p>
+<h2 id="5-Reactive"><a href="#5-Reactive" class="headerlink" title="5.Reactive"></a>5.Reactive</h2><p>Dart非常适合反应式编程，支持管理短期对象 - 例如UI小部件 - 通过Dart的快速对象分配和分代垃圾收集器。Dart通过使用Future和 Stream对象的语言功能和API支持异步编程 。</p>
+<p>小编有幸借得一本《Dart 编程语言》电子工业出版社2017 ，目前正在仔细专研。其内容涉及了对象、类型、表达式与语句等基础知识，但它总体还是着重讲解语言背后的原理和思想。这意味着这本书并不太适合我这种初学者，但是只要具备基本的编程知识还是没有问题的。以后我还是会把看书之后的心得体会分享给大家。<br><a href="https://github.com/Guojx123/Guojx123.github.io" target="_blank" rel="noopener">希望大家多多支持我</a> </p>
+
       
     </div>
     
     
     
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Dart/" rel="tag"># Dart</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/10/23/Flutter notes3/" rel="next" title="Flutter 学习笔记3">
+                <i class="fa fa-chevron-left"></i> Flutter 学习笔记3
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/10/27/page/" rel="prev" title="page">
+                page <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -439,7 +563,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#旅途，Karl-Shakur摄于加州。"><span class="nav-number">1.</span> <span class="nav-text">旅途，Karl Shakur摄于加州。</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#尼亚加拉瀑布，来自摄影师Michael-Sidofsky。"><span class="nav-number">2.</span> <span class="nav-text">尼亚加拉瀑布，来自摄影师Michael Sidofsky。</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#秋日山林，Emmett-Sparling摄于日本京都。"><span class="nav-number">3.</span> <span class="nav-text">秋日山林，Emmett Sparling摄于日本京都。</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#水上菜市场，来自摄影师HARY-MUHAMMAD。"><span class="nav-number">4.</span> <span class="nav-text">水上菜市场，来自摄影师HARY MUHAMMAD。</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#楼宇之间，来自摄影师Tynan-Daniels。"><span class="nav-number">5.</span> <span class="nav-text">楼宇之间，来自摄影师Tynan Daniels。</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#千禧公园淋雨的孩子，来自摄影师Kam。"><span class="nav-number">6.</span> <span class="nav-text">千禧公园淋雨的孩子，来自摄影师Kam。</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#秋日山林，来自摄影师Glenn-Lee-Robinson。"><span class="nav-number">7.</span> <span class="nav-text">秋日山林，来自摄影师Glenn Lee Robinson。</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#奥地利哈尔施塔特，来自摄影师James-Relfdyer。"><span class="nav-number">8.</span> <span class="nav-text">奥地利哈尔施塔特，来自摄影师James Relfdyer。</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#晨曦中的布罗莫火山，来自摄影师Jooso-Hamalainen。"><span class="nav-number">9.</span> <span class="nav-text">晨曦中的布罗莫火山，来自摄影师Jooso Hamalainen。</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-Productive"><span class="nav-number">1.</span> <span class="nav-text">1.Productive</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-Fast"><span class="nav-number">2.</span> <span class="nav-text">2.Fast</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-Portable"><span class="nav-number">3.</span> <span class="nav-text">3.Portable</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-Approachable"><span class="nav-number">4.</span> <span class="nav-text">4.Approachable</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-Reactive"><span class="nav-number">5.</span> <span class="nav-text">5.Reactive</span></a></li></ol></div>
             
 
           </div>
