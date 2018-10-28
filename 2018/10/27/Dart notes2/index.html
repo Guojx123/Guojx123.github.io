@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Dart," />
 
 
 
@@ -79,17 +79,18 @@
 
 
 
-<meta name="description" content="一个分享日常、吐露心声的地方。">
+<meta name="description" content="简要介绍Dart">
+<meta name="keywords" content="Dart">
 <meta property="og:type" content="article">
-<meta property="og:title" content="page">
-<meta property="og:url" content="http://yoursite.com/2018/10/27/page/index.html">
+<meta property="og:title" content="Dart 基础2">
+<meta property="og:url" content="http://yoursite.com/2018/10/27/Dart notes2/index.html">
 <meta property="og:site_name" content="GGjx&#39;s Blog">
-<meta property="og:description" content="一个分享日常、吐露心声的地方。">
+<meta property="og:description" content="简要介绍Dart">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-10-27T09:14:39.586Z">
+<meta property="og:updated_time" content="2018-10-28T02:10:35.239Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="page">
-<meta name="twitter:description" content="一个分享日常、吐露心声的地方。">
+<meta name="twitter:title" content="Dart 基础2">
+<meta name="twitter:description" content="简要介绍Dart">
 
 
 
@@ -119,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/10/27/page/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/10/27/Dart notes2/"/>
 
 
 
 
 
-  <title>page | GGjx's Blog</title>
+  <title>Dart 基础2 | GGjx's Blog</title>
   
 
 
@@ -262,7 +263,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/27/page/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/27/Dart notes2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="江 寒君">
@@ -279,7 +280,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">page</h1>
+          <h1 class="post-title" itemprop="name headline">Dart 基础2</h1>
         
 
         <div class="post-meta">
@@ -310,8 +311,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/10/27/page/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/10/27/page/" itemprop="commentCount"></span>
+                <a href="/2018/10/27/Dart notes2/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/10/27/Dart notes2/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -319,7 +320,7 @@
 
           
           
-             <span id="/2018/10/27/page/" class="leancloud_visitors" data-flag-title="page">
+             <span id="/2018/10/27/Dart notes2/" class="leancloud_visitors" data-flag-title="Dart 基础2">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -350,7 +351,17 @@
       
 
       
-        
+        <p>简要介绍Dart<br> <a id="more"></a><br>请看，这是一个简单的表达式：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">2</span><br></pre></td></tr></table></figure></p>
+<p>毫无疑问，这个表达式的值就是整数2。这里有个复杂的表达式：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">3+4</span><br><span class="line">(3+4)*6</span><br><span class="line">1+2*2</span><br><span class="line">123265*45621313</span><br></pre></td></tr></table></figure></p>
+<p>它们的值你应该都知道，但是最后的那个例子比较有趣，Dart里面的整数很像数字，它没有32位或者64位的最大值的限制，唯一的限制就是内存了。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">//Dart不仅支持整数，也支持浮点数、字符串、布尔值等</span><br><span class="line">3.1415</span><br><span class="line">‘A String’</span><br><span class="line">true</span><br><span class="line">[] //空列表</span><br></pre></td></tr></table></figure></p>
+<p>列表可以做索引操作：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[1,2,3] [2]</span><br><span class="line">[1,2,3].length</span><br><span class="line">[].isEmpty</span><br></pre></td></tr></table></figure></p>
+<p> 上面那个例子的结果是2和3、true。列表属性有length、isEmpty等</p>
+<p> 当然，我们可以定义函数，看<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">main()&#123;</span><br><span class="line">  print(&apos;Hello World&apos;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>程序的执行总是开始于main（）函数的调用，其方法里只有一条语句，即接收了一个参数的print（）函数。这里传递的参数是一个字面量的字符串’Hello World’。运行的结果是打印出“Hello World”。</p>
+<p>下面是另一个函数：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">twice(x) =&gt; x * 2;</span><br></pre></td></tr></table></figure></p>
+<p>我们声明了一个名为twice的函数，并有一个x的参数。返回的x乘以2的结果。<br>调用它：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">twice(2)</span><br></pre></td></tr></table></figure></p>
+<p>当然，结果是4。twice函数有两部分，一部分是函数名和形参组成的函数签名，另一部分就是跟在=&gt;后面的函数体。<br>还有一种等价的写法就是：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">twice(x)&#123;</span><br><span class="line">  return x * 2;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+
       
     </div>
     
@@ -364,6 +375,12 @@
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Dart/" rel="tag"># Dart</a>
+          
+        </div>
       
 
       
