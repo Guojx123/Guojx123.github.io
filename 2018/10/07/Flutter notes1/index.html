@@ -87,17 +87,17 @@
 <meta property="og:site_name" content="GGjx&#39;s Blog">
 <meta property="og:description" content="今天要做的一个东西就是底部导航栏先看看它是什么样子的：">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://yoursite.com/images/W1.jpeg">
-<meta property="og:image" content="http://yoursite.com/images/W2.png">
-<meta property="og:image" content="http://yoursite.com/images/W4.png">
-<meta property="og:image" content="http://yoursite.com/images/W3.png">
-<meta property="og:image" content="http://yoursite.com/images/W5.png">
-<meta property="og:image" content="http://yoursite.com/images/W6.png">
+<meta property="og:image" content="http://yoursite.com/2018/10/07/Flutter%20notes1/images/W1.jpeg">
+<meta property="og:image" content="http://yoursite.com/2018/10/07/Flutter%20notes1/images/W2.png">
+<meta property="og:image" content="http://yoursite.com/2018/10/07/Flutter%20notes1/images/W4.png">
+<meta property="og:image" content="http://yoursite.com/2018/10/07/Flutter%20notes1/images/W3.png">
+<meta property="og:image" content="http://yoursite.com/2018/10/07/Flutter%20notes1/images/W5.png">
+<meta property="og:image" content="http://yoursite.com/2018/10/07/Flutter%20notes1/images/W6.png">
 <meta property="og:updated_time" content="2018-10-07T01:33:06.171Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Flutter 学习笔记1">
 <meta name="twitter:description" content="今天要做的一个东西就是底部导航栏先看看它是什么样子的：">
-<meta name="twitter:image" content="http://yoursite.com/images/W1.jpeg">
+<meta name="twitter:image" content="http://yoursite.com/2018/10/07/Flutter%20notes1/images/W1.jpeg">
 
 
 
@@ -358,8 +358,8 @@
       
 
       
-        <p>今天要做的一个东西就是底部导航栏<br>先看看它是什么样子的：<br><a id="more"></a><br><img src="/images/W1.jpeg" alt=""><br>首先，要做这个demo，我们先拆分它的结构：<br>1.底部导航栏（bottomNavigationBar）<br>2.底部导航栏分别要对应的界面（假设3张）<br>我们先建立这些dart文件，并命名， 分别为第一个界面，第二个界面，第三个界面<br><img src="/images/W2.png" alt=""><br>接下来，我们给每一个tab子界面，加一些简单的代码，然后渲染<br><img src="/images/W4.png" alt=""><br>其中，Scaffold就是app的一张白纸，上面可以添加appBar（顶部的Bar），body组件显示相关内容。<br><img src="/images/W3.png" alt=""><br>建好这三个页面，我们就可以这main.dart的组件部分加上一个底部导航，并且把它们都关联起来！</p>
-<p>首先我们要将这3个tab界面引入到我们的父组件，就是main.dart中，像这样<br><img src="/images/W5.png" alt=""><br>然后就修改main.dart文件<br><img src="/images/W6.png" alt=""><br>其中TabController 就是tabbar的控制器</p>
+        <p>今天要做的一个东西就是底部导航栏<br>先看看它是什么样子的：<br><a id="more"></a><br><img src="/2018/10/07/Flutter notes1/images/W1.jpeg" alt=""><br>首先，要做这个demo，我们先拆分它的结构：<br>1.底部导航栏（bottomNavigationBar）<br>2.底部导航栏分别要对应的界面（假设3张）<br>我们先建立这些dart文件，并命名， 分别为第一个界面，第二个界面，第三个界面<br><img src="/2018/10/07/Flutter notes1/images/W2.png" alt=""><br>接下来，我们给每一个tab子界面，加一些简单的代码，然后渲染<br><img src="/2018/10/07/Flutter notes1/images/W4.png" alt=""><br>其中，Scaffold就是app的一张白纸，上面可以添加appBar（顶部的Bar），body组件显示相关内容。<br><img src="/2018/10/07/Flutter notes1/images/W3.png" alt=""><br>建好这三个页面，我们就可以这main.dart的组件部分加上一个底部导航，并且把它们都关联起来！</p>
+<p>首先我们要将这3个tab界面引入到我们的父组件，就是main.dart中，像这样<br><img src="/2018/10/07/Flutter notes1/images/W5.png" alt=""><br>然后就修改main.dart文件<br><img src="/2018/10/07/Flutter notes1/images/W6.png" alt=""><br>其中TabController 就是tabbar的控制器</p>
 <p>然后在initState()初始化的时候，我们定义了length属性，就是表示有几个tab</p>
 <p>再然后在首页的Scaffold中去加入一个bottomNavigationBar（ 底部导航栏）</p>
 <p>child里面new一个TabBar出来，TabBar中的tabs属性里面包含了一个Tab widget数组，每个Tab就是对应的下面的图标和文案， controller就是控制器了，应该都很好理解</p>
@@ -514,7 +514,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>

@@ -87,13 +87,13 @@
 <meta property="og:site_name" content="GGjx&#39;s Blog">
 <meta property="og:description" content="什么是HexoHexo 是一个快速、简洁且高效的博客框架。Hexo  使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。官方文档点击传送门。这里说到的Markdown就是指一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://yoursite.com/images/h1.png">
-<meta property="og:image" content="http://yoursite.com/images/h2.png">
+<meta property="og:image" content="http://yoursite.com/2018/10/04/Use-Hexo-GitHub-for-easy-blogging-on-Mac/images/h1.png">
+<meta property="og:image" content="http://yoursite.com/2018/10/04/Use-Hexo-GitHub-for-easy-blogging-on-Mac/images/h2.png">
 <meta property="og:updated_time" content="2018-10-05T04:32:42.495Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Use Hexo+GitHub for easy blogging on Mac">
 <meta name="twitter:description" content="什么是HexoHexo 是一个快速、简洁且高效的博客框架。Hexo  使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。官方文档点击传送门。这里说到的Markdown就是指一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式。">
-<meta name="twitter:image" content="http://yoursite.com/images/h1.png">
+<meta name="twitter:image" content="http://yoursite.com/2018/10/04/Use-Hexo-GitHub-for-easy-blogging-on-Mac/images/h1.png">
 
 
 
@@ -364,7 +364,7 @@
 <p>新建完成后，输入ls，可以查看该目录下的文件：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">·</span><br><span class="line">|-- _config.yml</span><br><span class="line">|-- package.json</span><br><span class="line">|-- scaffolds</span><br><span class="line">|-- source</span><br><span class="line">|   |-- _drafts</span><br><span class="line">|   |-- _posts</span><br><span class="line">|-- themes</span><br></pre></td></tr></table></figure></p>
 <p>至此，你就完成了Hexo的安装及初始化，接下来我们就可以进行本地的预览啦。<br>先安装Hexo server：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo npm install hexo-server</span><br></pre></td></tr></table></figure></p>
 <p>然后生成静态页面并打开hexo本地服务：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate   (或 hexo g)</span><br><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></p>
-<h2 id="2-配置"><a href="#2-配置" class="headerlink" title="2.配置"></a>2.配置</h2><p>关联Github账户：<br>首先需要去<a href="https://github.com/" target="_blank" rel="noopener">Github</a>官网注册一个账号，并新建一个名为 [your_account].github.io 的仓库。<br><img src="/images/h1.png" alt=""><br>仓库名是你的id，且格式要对应。我这里已经创建一个了，所以报错了。<br><img src="/images/h2.png" alt=""><br>打开访达，之前创建的blog目录下的 _config.yml 文件，在修改最下方的deploy为：<strong>*注意，冒号后面一定要加空格</strong><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">type: git</span><br><span class="line">repo: gihub: https:<span class="comment">//github.com/[your_account]/[your_accout].github.io.git</span></span><br><span class="line">branch: master</span><br></pre></td></tr></table></figure></p>
+<h2 id="2-配置"><a href="#2-配置" class="headerlink" title="2.配置"></a>2.配置</h2><p>关联Github账户：<br>首先需要去<a href="https://github.com/" target="_blank" rel="noopener">Github</a>官网注册一个账号，并新建一个名为 [your_account].github.io 的仓库。<br><img src="/2018/10/04/Use-Hexo-GitHub-for-easy-blogging-on-Mac/images/h1.png" alt=""><br>仓库名是你的id，且格式要对应。我这里已经创建一个了，所以报错了。<br><img src="/2018/10/04/Use-Hexo-GitHub-for-easy-blogging-on-Mac/images/h2.png" alt=""><br>打开访达，之前创建的blog目录下的 _config.yml 文件，在修改最下方的deploy为：<strong>*注意，冒号后面一定要加空格</strong><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">type: git</span><br><span class="line">repo: gihub: https:<span class="comment">//github.com/[your_account]/[your_accout].github.io.git</span></span><br><span class="line">branch: master</span><br></pre></td></tr></table></figure></p>
 <p>接下来安装hexo的git部署，在命令行中执行：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure></p>
 <p>最后，将生成静态页面并部署到github的仓库中，执行：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ hexo d -g </span><br><span class="line">或者</span><br><span class="line">$ hexo generate</span><br><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></p>
 <p>当提示<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">INFO Deploy done: git </span><br><span class="line">即上传成功，这时就可以通过 **http:\\[your_account].github.io 来访问你的个人站点了。</span><br></pre></td></tr></table></figure></p>
@@ -524,7 +524,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
