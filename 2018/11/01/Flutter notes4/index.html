@@ -79,25 +79,18 @@
 
 
 
-<meta name="description" content="今天要做的一个东西就是底部导航栏先看看它是什么样子的：">
+<meta name="description" content="一个分享日常、吐露心声的地方。">
 <meta name="keywords" content="Flutter">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Flutter 学习笔记1">
-<meta property="og:url" content="http://yoursite.com/2018/10/07/Flutter notes1/index.html">
+<meta property="og:title" content="Flutter 学习笔记4">
+<meta property="og:url" content="http://yoursite.com/2018/11/01/Flutter notes4/index.html">
 <meta property="og:site_name" content="GGjx&#39;s Blog">
-<meta property="og:description" content="今天要做的一个东西就是底部导航栏先看看它是什么样子的：">
+<meta property="og:description" content="一个分享日常、吐露心声的地方。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://yoursite.com/images/W1.jpeg">
-<meta property="og:image" content="http://yoursite.com/images/W2.png">
-<meta property="og:image" content="http://yoursite.com/images/W4.png">
-<meta property="og:image" content="http://yoursite.com/images/W3.png">
-<meta property="og:image" content="http://yoursite.com/images/W5.png">
-<meta property="og:image" content="http://yoursite.com/images/W6.png">
-<meta property="og:updated_time" content="2018-10-07T01:33:06.171Z">
+<meta property="og:updated_time" content="2018-11-01T03:08:25.710Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Flutter 学习笔记1">
-<meta name="twitter:description" content="今天要做的一个东西就是底部导航栏先看看它是什么样子的：">
-<meta name="twitter:image" content="http://yoursite.com/images/W1.jpeg">
+<meta name="twitter:title" content="Flutter 学习笔记4">
+<meta name="twitter:description" content="一个分享日常、吐露心声的地方。">
 
 
 
@@ -127,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/10/07/Flutter notes1/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/11/01/Flutter notes4/"/>
 
 
 
 
 
-  <title>Flutter 学习笔记1 | GGjx's Blog</title>
+  <title>Flutter 学习笔记4 | GGjx's Blog</title>
   
 
 
@@ -270,7 +263,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/07/Flutter notes1/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/01/Flutter notes4/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="江 寒君">
@@ -287,7 +280,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Flutter 学习笔记1</h1>
+          <h1 class="post-title" itemprop="name headline">Flutter 学习笔记4</h1>
         
 
         <div class="post-meta">
@@ -299,8 +292,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-10-07T09:20:15+08:00">
-                2018-10-07
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-01T11:06:17+08:00">
+                2018-11-01
               </time>
             
 
@@ -318,8 +311,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/10/07/Flutter notes1/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/10/07/Flutter notes1/" itemprop="commentCount"></span>
+                <a href="/2018/11/01/Flutter notes4/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/11/01/Flutter notes4/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -327,7 +320,7 @@
 
           
           
-             <span id="/2018/10/07/Flutter notes1/" class="leancloud_visitors" data-flag-title="Flutter 学习笔记1">
+             <span id="/2018/11/01/Flutter notes4/" class="leancloud_visitors" data-flag-title="Flutter 学习笔记4">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -358,13 +351,7 @@
       
 
       
-        <p>今天要做的一个东西就是底部导航栏<br>先看看它是什么样子的：<br><a id="more"></a><br><img src="/images/W1.jpeg" alt=""><br>首先，要做这个demo，我们先拆分它的结构：<br>1.底部导航栏（bottomNavigationBar）<br>2.底部导航栏分别要对应的界面（假设3张）<br>我们先建立这些dart文件，并命名， 分别为第一个界面，第二个界面，第三个界面<br><img src="/images/W2.png" alt=""><br>接下来，我们给每一个tab子界面，加一些简单的代码，然后渲染<br><img src="/images/W4.png" alt=""><br>其中，Scaffold就是app的一张白纸，上面可以添加appBar（顶部的Bar），body组件显示相关内容。<br><img src="/images/W3.png" alt=""><br>建好这三个页面，我们就可以这main.dart的组件部分加上一个底部导航，并且把它们都关联起来！</p>
-<p>首先我们要将这3个tab界面引入到我们的父组件，就是main.dart中，像这样<br><img src="/images/W5.png" alt=""><br>然后就修改main.dart文件<br><img src="/images/W6.png" alt=""><br>其中TabController 就是tabbar的控制器</p>
-<p>然后在initState()初始化的时候，我们定义了length属性，就是表示有几个tab</p>
-<p>再然后在首页的Scaffold中去加入一个bottomNavigationBar（ 底部导航栏）</p>
-<p>child里面new一个TabBar出来，TabBar中的tabs属性里面包含了一个Tab widget数组，每个Tab就是对应的下面的图标和文案， controller就是控制器了，应该都很好理解</p>
-<p>然后flutter run 跑起来，就实现了一个简单的底部导航了。</p>
-
+        
       
     </div>
     
@@ -394,8 +381,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/10/04/Use-Hexo-GitHub-for-easy-blogging-on-Mac/" rel="next" title="Use Hexo+GitHub for easy blogging on Mac">
-                <i class="fa fa-chevron-left"></i> Use Hexo+GitHub for easy blogging on Mac
+              <a href="/2018/10/27/Dart notes2/" rel="next" title="Dart 基础1">
+                <i class="fa fa-chevron-left"></i> Dart 基础1
               </a>
             
           </div>
@@ -404,8 +391,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/10/22/Flutter notes2/" rel="prev" title="Flutter 学习笔记2">
-                Flutter 学习笔记2 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/11/05/Demo/" rel="prev" title="关于校园App的介绍">
+                关于校园App的介绍 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
